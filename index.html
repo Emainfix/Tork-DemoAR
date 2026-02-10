@@ -39,9 +39,15 @@
     <div class="category-bar">Servilletas</div>
 
     <main class="container text-center content">
-      <h1 class="product-title">Tork Dispensador Servilleta</h1>
+      <h1 class="product-title" id="productTitle">Tork Dispensador Servilleta</h1>
 
       <div class="product-image">
+        <button id="prevBtn" class="nav-arrow prev" aria-label="Anterior">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+          </svg>
+        </button>
+
         <model-viewer
           id="viewer"
           src="./model.glb"
@@ -50,15 +56,21 @@
           disable-zoom
           shadow-intensity="1"
         ></model-viewer>
+
+        <button id="nextBtn" class="nav-arrow next" aria-label="Siguiente">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+        </button>
       </div>
 
       <div class="badge-wrapper">
         <span class="traffic-badge">Tráfico: bajo - medio</span>
       </div>
 
-      <h2 class="material-title">Fit Negro</h2>
+      <h2 class="material-title" id="materialTitle">Fit Negro</h2>
 
-      <p class="description">
+      <p class="description" id="productDescription">
         Diseño moderno y elegante, recubrimiento antihuellas
       </p>
 
@@ -188,4 +200,3 @@
     <script type="module" src="app.js"></script>
   </body>
 </html>
-
