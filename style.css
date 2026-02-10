@@ -118,11 +118,11 @@ body {
 
 /* Botón */
 .btn-view {
-  background-color: #002855;
+  background-color: rgb(13, 202, 240);
   color: #fff;
   border: none;
-  border-radius: 4px;
-  padding: 1rem 1.1rem;
+  border-radius: 50px;
+  padding: 0.8rem 1.1rem;
   font-weight: bold;
 }
 
@@ -142,7 +142,7 @@ footer {
 .floating-btn {
   position: fixed;
   right: 20px;
-  top: 50%;
+  top: 95%;
   transform: translateY(-50%);
   width: 50px;
   height: 50px;

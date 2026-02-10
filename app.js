@@ -1,15 +1,15 @@
 const products = [
   {
-    title: "Tork Dispensador Servilleta Negro",
-    material: "Fit Negro",
-    description: "Diseño moderno y elegante, recubrimiento antihuellas",
+    title: "Tork Xpressnap® Dispensador Fit™",
+    material: "Negro",
+    description: "Ideal para negocios en donde el espacio en las mesas es reducido pero la experiencia y el servicio son prioridad.",
     model: "./model.glb",
     usdz: "./model.usdz"
   },
   {
-    title: "Tork Dispensador Servilleta Blanco",
-    material: "Fit Blanco",
-    description: "Diseño moderno y elegante, ideal para cualquier ambiente",
+    title: "Tork Matic® Dispensador Toalla en Rollo",
+    material: "Sensor Intuition™ Negro",
+    description: "Con sensor Intuition™ Dispensación sin contacto, una hoja a la vez.",
     model: "./model2.glb",
     usdz: "./model2.usdz"
   }
