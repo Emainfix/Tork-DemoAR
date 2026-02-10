@@ -13,7 +13,7 @@ arButton.addEventListener('click', () => {
 
 function openQuickLook() {
   const link = document.createElement('a');
-  link.rel = 'ar';
+  //link.rel = 'ar';
   link.href = './model.usdz'; // IMPORTANTE: USDZ para Safari
   document.body.appendChild(link);
   link.click();
