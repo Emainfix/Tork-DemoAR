@@ -1,27 +1,33 @@
 const arButton = document.getElementById('arButton');
-const modelViewer = document.getElementById('viewer');
 
 arButton.addEventListener('click', () => {
-  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
 
   if (isIOS) {
-    const usdzSrc = modelViewer.getAttribute('ios-src');
-    if (usdzSrc) {
-      openQuickLook(usdzSrc);
-    } else {
-      alert('No se encontró un modelo AR para iOS.');
-    }
+    openQuickLook();
   } else {
     // Acá luego enchufamos WebXR para Android
     alert('AR en Android lo activamos en el próximo paso');
   }
 });
 
-function openQuickLook(usdzSrc) {
+function openQuickLook() {
   const link = document.createElement('a');
   link.rel = 'ar';
-  link.href = usdzSrc;
+  link.href = './model.usdz';
+  link.className = 'btn btn-primary btn-view';
+
+  const img = document.createElement('img');
+  img.src = 'btn.png';
+  img.className = 'btn-img';
+  img.alt = 'Ver en AR';
+
+  link.appendChild(img);
   document.body.appendChild(link);
+
   link.click();
+
   document.body.removeChild(link);
 }
+
+
