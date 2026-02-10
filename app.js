@@ -1,13 +1,13 @@
 const products = [
   {
-    title: "Tork Dispensador Servilleta",
+    title: "Tork Dispensador Servilleta Negro",
     material: "Fit Negro",
     description: "Diseño moderno y elegante, recubrimiento antihuellas",
     model: "./model.glb",
     usdz: "./model.usdz"
   },
   {
-    title: "Tork Dispensador Servilleta",
+    title: "Tork Dispensador Servilleta Blanco",
     material: "Fit Blanco",
     description: "Diseño moderno y elegante, ideal para cualquier ambiente",
     model: "./model2.glb",
@@ -75,3 +75,6 @@ function openQuickLook() {
 
   document.body.removeChild(link);
 }
+
+// Inicializar la vista para asegurar que el título sea correcto desde el inicio
+updateProduct(currentIndex);
