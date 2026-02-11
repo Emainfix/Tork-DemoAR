@@ -93,25 +93,26 @@ body {
 
 .traffic-badge {
   display: inline-block;
-  background-color: #e6f0fa;
+  border: #002855 1px solid;
   color: #002855;
   border-radius: 50px;
   padding: 6px 18px;
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* Material */
 .material-title {
   font-size: 1.25rem;
   font-weight: 600;
+  color: #002855;
   margin-top: 10px;
 }
 
 /* Texto */
 .description {
   font-size: 0.95rem;
-  color: #555;
+  color: #002855;
   line-height: 1.6;
   margin-bottom: 25px;
 }
@@ -127,7 +128,7 @@ body {
 }
 
 .btn-view:hover {
-  background-color: #001f40;
+  background-color: rgb(42, 219, 255);
   color: #fff;
 }
 
